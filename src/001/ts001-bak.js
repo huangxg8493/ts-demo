@@ -22,6 +22,15 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 
+function e$2(e, t) {
+    t && (
+        e.super_ = t,
+            e.prototype = Object.create(t.prototype,
+                {constructor: {value: e, enumerable: !1, writable: !0, configurable: !0}}
+            )
+    );
+}
+
 var Animal = (function () {
     function Animal(theName) {
         this.name = theName;
